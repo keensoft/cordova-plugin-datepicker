@@ -311,19 +311,19 @@ module.exports = {
             overlayFooter.appendChild(rightCell);
 
             var cancelButton = document.createElement("button");
-            cancelButton.innerText = "Cancel";
+            cancelButton.innerText = "Cancelar";
             cancelButton.style.cssText = buttonCSSText;
 
             cancelButton.addEventListener("click", function(){
 			
                 overlay.parentElement.removeChild(overlay);
-			
+				success();
             });
 
             rightCell.appendChild(cancelButton);
 
             var useButton = document.createElement("button");
-            useButton.innerText = "Use";
+            useButton.innerText = "Usar";
             useButton.style.cssText = buttonCSSText;
 		
             useButton.addEventListener("click", function () {
